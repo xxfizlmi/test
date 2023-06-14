@@ -1,0 +1,23 @@
+body{
+    font-family: "Barlow", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+    /* height: 100%; */
+    width: 100%;
+    position: absolute;
+    /* z-index: 1; */
+    /* top: 0;
+    left:absolute/
+    background-color: #ff4d29;
+    /* overflow-x: hidden; */
+    /* transition: 0.5s; */
+    /* padding-top: 60px; */
+}
+
+.col #signin{
+    height: 100%;
+}
+#signin {
+    background-color: #ff4d29;
+    color: #ffffff;
+}

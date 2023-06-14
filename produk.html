@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley-Davidson</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/css.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="assets/boxicons-2.1.4/css/boxicons.min.css">
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+        }
+
+        .pagination a.active {
+            background: #ff4d29;
+  background: -webkit-linear-gradient(-135deg, #ff4d29, #f85b12);
+  background: -o-linear-gradient(-135deg, #ff4d29, #f85b12);
+  background: -moz-linear-gradient(-135deg, #ff4d29, #f85b12);
+  background: linear-gradient(-135deg, #ff4d29, #f85b12);
+            color: white;
+            border: 1px solid #ff4d29;
+        }
+
+        .pagination a:hover:not(.active) {
+            background: #ff4d29;
+            background: -webkit-linear-gradient(-135deg, #ff4d29, #f85b12);
+            background: -o-linear-gradient(-135deg, #ff4d29, #f85b12);
+            background: -moz-linear-gradient(-135deg, #ff4d29, #f85b12);
+            background: linear-gradient(-135deg, #ff4d29, #f85b12);
+        }
+
+        .pagination a:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .pagination a:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="top-nav" id="home">
+      <div class="container">
+          <div class="row">
+
+          </div>
+      </div>
+  </nav>
+  <div id="mySidebar" class="sidebar text-start">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <img src="assets/img/Logo.png" alt="logo" style="width: 50px; margin-left: 12px; margin-top: 2.5px;">
+      <a href="artikel.html" class="fs-6">Artikel</a>
+      <a href="event.html" class="fs-6">Event</a>
+      <a href="Gallery.html" class="fs-6">Galery Foto</a>
+      <a href="klien.html" class="fs-6">Klien Kami</a>
+      <div class="dropdown">
+          <a class="dropdown-toggle fs-6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+          </a>
+          <ul class="dropdown-menu" style="width: 100%;
+          ">
+              <li><a class="dropdown-item fs-6" href="login.html">Sign in</a></li>
+              <li><a class="dropdown-item fs-6" href="signup.html">Sign up</a></li>
+          </ul>
+      </div>
+  </div>
+  <!-- Sidebar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col">
+                  <button class="openbtn" onclick="openNav()">☰</button>
+                  <img src="assets/img/Logo.png" alt="logo" style="width:50px">
+                  <a class="navbar-brand text-start" href="#">Harley-Davidson<span>.</span></a>
+              </div>
+          </div>
+          <div id="main">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="Profile.html">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="VisidanMisi.html">Visi dan Misi</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="produk.html">Produk kami</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="#contactus">Kontak kami </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-capitalize" href="about-us.html">About us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+<div class="container" style="padding-top: 50px; padding-bottom: 20px;">
+  <div class="container text-center">
+    <div class="d-flex flex-column mb-3">
+      <div class="p-2">
+
+        <div class="text-center" style="padding-bottom: 50px;">
+          <h2>Produk</h2>
+        </div>
+        <div class="row g-3 row-cols-3">
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">Yamaha NMAX</h5>
+                <p class="card-text">Harga Rp. 30.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">Honda ADV</h5>
+                <p class="card-text">Harga Rp. 23.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">Suzuki</h5>
+                <p class="card-text">Harga Rp. 21.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">Vario</h5>
+                <p class="card-text">Harga Rp. 37.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">Kawasaki</h5>
+                <p class="card-text">Harga Rp. 45.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img/produk/1.png" class="card-img-center" alt="..." style="width:100%">
+              <div class="card-body">
+                <h5 class="card-title">RC5</h5>
+                <p class="card-text">Harga Rp. 53.000.000.00</p>
+                <a href="#" class="btn btn-primary">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination" style="padding-top: 50px;">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="card" id="contactus">
+        <div class="card-body">
+            <div class="container">
+                <div class="text-center" style="padding-bottom: 30px;">
+                    <h2>Kontak kami</h2>
+                </div>
+                <div class="row text-start">
+                    <div class="col">
+                        <p>
+                            <i class="bx bxs-envelope"></i>
+                            <span>LayananE-Mail contact_center@yamaha-motor.co.id tersedia dari pukul 8.00 WIB - 17.00 WIB</span>
+                        </p>
+                        <p>
+                            <i class="bx bxs-phone"></i>
+                            <span>Layanan fax ke 021-2457-5555 tersedia dari pukul 8.00 WIB - 17.00 WIB</span>
+                        </p>
+                        <p>
+                            <i class="bx bxs-phone"></i>
+                            <span>Layanan No HP ke +628-1242-324-235 tersedia dari pukul 8.00 WIB - 17.00 WIB</span>
+                        </p>
+                        <p>
+                            <i class="bx bxs-user"></i>
+                            <span>harley-davidson</span>
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="bx bxl-facebook"></i></a>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                            <a href="#"><i class="bx bxl-instagram"></i></a>
+                            <a href="#"><i class="bx bxl-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p>
+                            <i class="bx bxs-map"></i>
+                            <span>Jl. DR KRT Radjiman Widyodiningrat RT/RW 009-06 Rawa Terate, Cakung Jakarta Timur 13920 Indonesia</span>
+                        </p>
+                        <p>
+                            <i class="bx bxs-graduation"></i>
+                            <span>Universitas Brawijaya</span>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">No Handphone</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+62812xxxxxxxx">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="card-text">Copyright © 2023 Harley-Davidson Motor Mfg. All Rights Reserved</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+    </div>
+</footer>
+<!-- JQuery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!-- Boostrap -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Owl Carousel -->
+<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<!-- Script -->
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+</body>
+
+</html>
